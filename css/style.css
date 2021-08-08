@@ -1,0 +1,191 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.navbar-brand{
+  -webkit-animation: music 1s linear infinite alternate;
+          animation: music 1s linear infinite alternate;
+}
+@keyframes music {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+.header_hero__img{
+  -webkit-animation: anime_hero 3s linear infinite;
+          animation: anime_hero 3s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@keyframes anime_hero {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+ .banner{
+  width: 100vw;
+  height: 46rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) #0a183d;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) #0a183d;
+   }
+   .banner .container {
+     padding-top: 10rem;
+   }
+.header_hero__text{
+  padding-top: 5rem;
+}
+
+
+span{
+  color: tomato;
+}
+.nav-link{
+  letter-spacing: 1px;
+}
+
+.nav-link:hover{
+
+  
+  background: tomato;
+  display: block;
+  margin: auto;
+  transition: .5s;
+  
+}
+
+.text-middle{
+  text-align: center;
+  text-transform: uppercase;
+  font-size:2.5rem;
+  font-weight: 130px;
+  padding-top: 50px;
+  letter-spacing: 3px;
+}
+
+.esy-text{
+  text-transform: uppercase;
+  color: white;
+  padding-top: 1rem;
+}
+.text1{
+  color: white;
+}
+.text2{
+  color:#0a183d;
+}
+
+.header_text__btn{
+  padding-top: 4rem;
+}
+
+.btn{
+  padding: 10px 20px;
+  border:2;
+  border-radius: 6px;
+  border-color: tomato;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  background: tomato;
+  color: black;
+  border-color: tomato;
+
+}
+
+.section{
+  height: 40rem;
+}
+
+.altr{
+  width: 20rem;
+  padding-top: 6rem;
+  
+}
+.text-center{
+  padding-top: 3rem;
+  color: #0a183d;
+  letter-spacing: .2rem;
+  font-weight:bolder;
+}
+.create{
+
+  color: white;
+
+}
+
+.section p{
+  font-size: 1.5rem;
+}
+/*------footer----------*/
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: #0a183d;
+	color: white;
+	text-align: center;
+}
+.foot{
+  padding-top: 10px;
+}
+.fab{
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  color: white;
+}
+.fab:hover{
+  color: tomato;
+}
+
+
+
+/*----------------RESPONSIVE CSS START HERE-----------------*/
+/* Small Devices, Tablets */
+@media only screen and (max-width :700px){
+
+  .banner .header_hero__img{
+    visibility: hidden;
+  }
+  .altr{
+    width:15rem;
+  }
+  .section p{
+    font-size: .7rem;
+    padding-bottom: 5rem;
+  }
+
+}
+@media only screen and (max-width:990px){
+  .banner .header_hero__img{
+    visibility: hidden;
+
+  }
+  .section p{
+    font-size: 1rem;
+    padding-bottom: 5rem;
+  }
+}
